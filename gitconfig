@@ -1,0 +1,32 @@
+[user]
+    name = Julia Friesel
+    email = julia.friesel@gmail.com
+
+[alias]
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    st = status
+    ci = commit
+    co = checkout
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+[core]
+    excludesfile = ~/.gitignore_global
+    editor = vim
+[push]
+    default = simple
+
+# Color config extracted from
+# https://github.com/so-fancy/diff-so-fancy#improved-colors-for-the-highlighted-bits
+[color "diff"]
+    meta = yellow bold
+    commit = green bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = "red bold 52"
+    newNormal = "green bold"
+    newHighlight = "green bold 22"
