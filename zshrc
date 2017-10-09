@@ -87,6 +87,11 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export PATH=$PATH:./node_modules/.bin/
+export PATH=$PATH:./node_modules/.bin/:$HOME/.cargo/bin
 
 eval "$(direnv hook zsh)"
+
+# make vim use my color scheme
+if [ "$COLORTERM" = "gnome-terminal" -a "$TERM" =~ xterm.*  ]; then
+  export TERM=gnome-256color
+fi
