@@ -6,19 +6,10 @@
   "globals": {},
   "extends": "eslint:recommended",
   "rules": {
-    "quotes": [
-      2,
-    "single",
-    {"allowTemplateLiterals":true}
-    ],
-    "curly": [
-      2,
-    "all"
-    ],
+    "allowTemplateLiterals": true,
     "eqeqeq": 2,
     "guard-for-in": 2,
     "wrap-iife": 2,
-    "no-use-before-define": 2,
     "new-cap": 2,
     "no-empty": 2,
     "no-irregular-whitespace": 2,
@@ -75,7 +66,6 @@
     "never"
     ],
     "eol-last": 2,
-    "space-infix-ops": 2,
     "keyword-spacing": [
       2,
     {
@@ -117,13 +107,10 @@
     ],
     "semi": [
       2,
-    "always"
-    ],
-    "newline-after-var": [
-      2,
-    "always"
+    "never"
     ],
     "no-dupe-keys": [2],
-    "quote-props": [2, "as-needed"]
+    "quote-props": [2, "as-needed"],
+    "no-console": false
   }
 }

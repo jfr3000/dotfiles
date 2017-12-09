@@ -15,6 +15,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
+
 " Colors {{{
 syntax enable           " enable syntax processing
 colorscheme monokai
@@ -49,7 +50,7 @@ let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
 
 let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
+let g:syntastic_javascript_eslint_exe='eslint'
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
